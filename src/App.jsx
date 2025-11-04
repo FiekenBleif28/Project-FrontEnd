@@ -1,15 +1,22 @@
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import Footer from "./components/Footer/Footer";
+
 function App() {
   return (
-    <div className="bg-blue-100 min-h-screen w-screen flex flex-col items-center justify-center">
-      <h1 className="text-4xl font-bold text-red-600">
-        FrontEnd 
-        <center> .</center>
-      </h1>
-      <h1 className="text-2xl text-red-600">
-         Project aktif
-      </h1>
+    <div className="flex flex-col min-h-screen">
+      {/* Header di atas */}
+      <Header />
+
+      {/* Konten utama */}
+      <main className="flex-grow">
+        <Home />
+      </main>
+
+      {/* Footer di bawah */}
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
